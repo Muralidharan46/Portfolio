@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Murali Dharan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- About Page -->
+  <div class="container" id="about-page">
+    <h1>Hello I am, Murali Dharan</h1>
+    <p>My journey in the Web development world began with a keen interest...</p>
+    <p>I thrive on solving complex problems and implementing innovative solutions...</p>
+    <div class="button-container">
+      <button onclick="showPage('portfolio-page')">Click to View Portfolio</button>
+    </div>
+  </div>
+
+  <!-- Portfolio Page -->
+  <div class="container hidden" id="portfolio-page">
+    <h1>MURALI DHARAN</h1>
+    <p style="text-align:center;">Developer</p>
+    <h2>About Me</h2>
+    <p>I am a dedicated and curious BCA (Bachelor of Computer Applications) student...</p>
+
+    <h2>Skills</h2>
+    <div>
+      <p>JavaScript - 90%</p>
+      <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
+      <p>Java - 87%</p>
+      <div class="skill-bar"><div class="skill-level" style="width:87%"></div></div>
+      <p>C++ - 95%</p>
+      <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
+      <p>C - 84%</p>
+      <div class="skill-bar"><div class="skill-level" style="width:84%"></div></div>
+      <p>Python - 92%</p>
+      <div class="skill-bar"><div class="skill-level" style="width:92%"></div></div>
+    </div>
+
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Applications</strong><br>KG College OF Arts and Science<br>Saravanampatti, Coimbatore</p>
+
+    <h2>Experience</h2>
+    <ul>
+      <li>Gained strong foundational knowledge in programming languages...</li>
+      <li>Completed academic projects such as: Library Management System in C++.</li>
+      <li>Participated in college-level coding competitions...</li>
+      <li>Engaged in practical coursework in Data Structures, DBMS, etc.</li>
+      <li>Collaborated with peers on group assignments...</li>
+    </ul>
+
+    <h2>Contact Info</h2>
+    <p>&#x260E; +91-8148833168</p>
+    <p>&#x2709; <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+    <p>&#x1F3E2; Veerapandi, Tamil Nadu, India</p>
+
+    <div class="button-container">
+      <button onclick="showPage('contact-page')">Contact Me</button>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div class="container hidden" id="contact-page">
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault(); alert('Form submitted!');">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/>
+      </div>
+      <div class="form-group">
+        <label for="questions">Questions about my profile:</label>
+        <textarea id="questions" name="questions" rows="5" placeholder="Enter your questions here"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
